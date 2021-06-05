@@ -2867,6 +2867,10 @@ a:hover, a:active {
 ## Menus
 --------------------------------------------------------------*/
 /** === Main menu === */
+.dsn-nav-bar > .header-top > .header-container{
+display: flex;
+justify-content: space-between;
+align-items: center;}
 .dsn-nav-bar > .header-top > .header-container, .dsn-nav-bar .site-header {
   -webkit-transition: 0.5s ease-in-out;
   -o-transition: 0.5s ease-in-out;
@@ -3280,7 +3284,7 @@ body.hamburger-menu .header-top {
   position: relative;
   z-index: 999;
   float: right;
-  top: 14px;
+  top: 5px;
   cursor: pointer;
   margin-right: 50px;
 }
