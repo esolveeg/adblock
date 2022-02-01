@@ -27,8 +27,7 @@ const features = [
     },
 ]
 
-
-document.addEventListener('DOMContentLoaded', function() {
+init = () => {
     const params = new URLSearchParams(window.location.search)
     const feature=features[parseInt(params.get('feature')) -1]
     const titles = document.querySelectorAll('.feature-title')
@@ -40,7 +39,10 @@ document.addEventListener('DOMContentLoaded', function() {
         title.innerHTML = feature.name
     })
     desc.innerHTML = feature.desc
-    console.log(titles)
-    // console.log(feature)
-        
-});
+    console.log("titles")
+}
+if (document.readyState !== "loading") {
+    init()
+} else {
+    document.addEventListener("DOMContentLoaded", init);
+}

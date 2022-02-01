@@ -12565,5 +12565,15 @@ footer .copyright-social ul li:last-child {
 .v-light .caption {
   color: #000;
 }
+.overlay{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .6);
+  position: absolute;
+  z-index: 10;
+}
+.slide-content-inner{
+  z-index: 12;
+}
 
 /*# sourceMappingURL=style.css.map */
